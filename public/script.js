@@ -83,6 +83,9 @@ submitbtn.addEventListener("click", (e) => {
         userInfo.course = course;
         userInfo.year = year;
         formMessage.textContent = "Thank you for applying!";
+        firstnameEl.value = "";
+        lastnameEl.value = "";
+        emailEl.value = "";
     }
     else {
         formMessage.textContent = "all fields are required!";
@@ -90,7 +93,7 @@ submitbtn.addEventListener("click", (e) => {
     clearTimeout(timer);
     timer = window.setTimeout(() => {
         formMessage.textContent = "";
-    }, 1300);
+    }, 1500);
 });
 closebtn.addEventListener("click", () => {
     applyCont.classList.remove("show-modal");
