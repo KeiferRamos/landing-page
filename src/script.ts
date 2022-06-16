@@ -45,6 +45,7 @@ const allReviewsCont = document.querySelector(".all-reviews") as HTMLDivElement;
 const courseSelectionCont = document.getElementById(
   "course"
 ) as HTMLSelectElement;
+const yearSelectionCont = document.getElementById("year") as HTMLSelectElement;
 const socialMediasCont = document.querySelector(
   ".social-medias"
 ) as HTMLDivElement;
@@ -201,6 +202,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const displayCourseSelectionContent = new displaySelection(courseList);
   displayCourseSelectionContent.format(courseSelectionCont);
+
+  const displayYearSelectionContent = new displaySelection(yearList);
+  displayYearSelectionContent.format(yearSelectionCont);
 
   filterReviews(Reviews);
 

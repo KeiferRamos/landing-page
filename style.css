@@ -374,26 +374,23 @@ footer {
   width: 100%;
   height: 100%;
   background: rgb(0, 0, 0, 0.5);
-  padding: 0 15px;
+  padding: 0 10px;
   display: none;
   color: #54979e;
 }
 
 .reviews-section > div {
   background: #2e3d65;
-  padding: 10px;
-}
-
-.reviews-section div > h1 {
-  margin-bottom: 10px;
+  padding: 5px;
+  margin-top: 80px;
 }
 
 .all-reviews {
-  max-height: 500px;
+  max-height: 400px;
   overflow: scroll;
   display: grid;
   gap: 5px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .ratings-level {

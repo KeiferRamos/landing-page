@@ -14,6 +14,7 @@ const allReviewsMainCont = document.querySelector(".reviews-section");
 const contactsCont = document.querySelector(".contacts");
 const allReviewsCont = document.querySelector(".all-reviews");
 const courseSelectionCont = document.getElementById("course");
+const yearSelectionCont = document.getElementById("year");
 const socialMediasCont = document.querySelector(".social-medias");
 const ratingsSelections = document.querySelectorAll(".rating");
 const submitbtn = document.getElementById("submit-btn");
@@ -137,6 +138,8 @@ window.addEventListener("DOMContentLoaded", () => {
     displaySocialMediaContent.format(socialMediasCont);
     const displayCourseSelectionContent = new displaySelection(courseList);
     displayCourseSelectionContent.format(courseSelectionCont);
+    const displayYearSelectionContent = new displaySelection(yearList);
+    displayYearSelectionContent.format(yearSelectionCont);
     filterReviews(Reviews);
     checkScreenWidth();
 });
