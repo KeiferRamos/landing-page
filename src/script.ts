@@ -96,6 +96,7 @@ navlink.forEach((link) => {
 ratingsSelections.forEach((option) => {
   option.addEventListener("click", (e: Event) => {
     const selected: string = (e.target as HTMLElement).id;
+    allReviewsCont.scrollTop = 0;
     if (selected == "all") {
       filterReviews(Reviews);
     } else {
